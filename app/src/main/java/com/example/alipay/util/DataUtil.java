@@ -2,6 +2,7 @@ package com.example.alipay.util;
 
 import com.example.alipay.R;
 import com.example.alipay.entity.GridItemEntity;
+import com.example.alipay.entity.SmallAppEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +35,23 @@ public class DataUtil {
         listtop.add(new GridItemEntity(R.mipmap.chuxing,"出行"));
         listtop.add(new GridItemEntity(R.mipmap.kabao,"卡包"));
         return  listtop;
+    }
+
+    public static List<SmallAppEntity> getSmallApp(){
+        List<SmallAppEntity> listapp = new ArrayList<>();
+        listapp.add(new SmallAppEntity("img0","name","describemsg",
+                "img1","text1","img2","text2","img3","text3",1));
+        listapp.add(new SmallAppEntity("img0","name","describemsg",
+                "img1","text1","img2","text2","img3","text3",2));
+        listapp.add(new SmallAppEntity("img0","name","describemsg",
+                "img1","text1","img2","text2","img3","text3",1));
+        listapp.add(new SmallAppEntity("img0","name","describemsg",
+                "img1","text1","img2","text2","img3","text3",2));
+        listapp.add(new SmallAppEntity("img0","name","describemsg",
+                "img1","text1","img2","text2","img3","text3",1));
+        listapp.add(new SmallAppEntity("img0","name","describemsg",
+                "img1","text1","img2","text2","img3","text3",2));
+        return listapp;
     }
 
 }
